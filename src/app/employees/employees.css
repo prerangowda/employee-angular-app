@@ -1,0 +1,169 @@
+
+.container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 50px;
+  background: linear-gradient(135deg, #ffffff, #f9f9ff);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+  font-family: 'Inter', sans-serif;
+  transition: all 0.4s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 50px rgba(0,0,0,0.18);
+}
+
+/* 🌈 Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.8rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.5px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* 📝 Employee Form */
+.employee-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.employee-form input {
+  flex: 1 1 220px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(180,180,200,0.6);
+  background: #fdfdff;
+  transition: all 0.3s ease;
+}
+
+.employee-form input:focus {
+  border-color: #8e2de2;
+  background: #ffffff;
+  outline: none;
+  box-shadow: 0 0 14px rgba(142, 45, 226, 0.3);
+  transform: scale(1.02);
+}
+
+/* 🎛️ Buttons */
+.employee-form button {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+/* Submit Button - Purple/Blue Gradient */
+.employee-form button[type="submit"] {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0, #00c6ff);
+  color: white;
+  box-shadow: 0 6px 18px rgba(142,45,226,0.3);
+}
+
+.employee-form button[type="submit"]:hover {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* Reset Button - Pink/Red Gradient */
+.employee-form button[type="button"] {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  box-shadow: 0 6px 18px rgba(255,65,108,0.3);
+}
+
+.employee-form button[type="button"]:hover {
+  background: linear-gradient(135deg, #e63946, #ff4757);
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* 📊 Table */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+table th, table td {
+  padding: 16px 18px;
+  text-align: left;
+}
+
+table th {
+  background: linear-gradient(90deg, #8e2de2, #4a00e0, #00c6ff);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+table tr {
+  transition: all 0.25s ease;
+}
+
+table tr:nth-child(even) {
+  background: #f9f9ff;
+}
+
+table tr:hover {
+  background: rgba(142,45,226,0.08);
+  transform: scale(1.01);
+}
+
+table td {
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+/* 🖲️ Table Buttons */
+table button {
+  margin-right: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Edit Button - Blue */
+table button:first-child {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,114,255,0.25);
+}
+
+table button:first-child:hover {
+  background: linear-gradient(135deg, #005fcc, #00aaff);
+  transform: translateY(-2px);
+}
+
+/* Delete Button - Red/Pink */
+table button:last-child {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  box-shadow: 0 4px 12px rgba(255,65,108,0.25);
+}
+
+table button:last-child:hover {
+  background: linear-gradient(135deg, #e63946, #ff4757);
+  transform: translateY(-2px);
+}
